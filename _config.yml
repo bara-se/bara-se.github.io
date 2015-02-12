@@ -1,4 +1,6 @@
 permalink: pretty
+sass:
+  sass_dir: _sass
 prose:
   rooturl: '_posts'
   siteurl: 'http://barakassen.se/'
