@@ -12,6 +12,15 @@ body {
   color: #444;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 header {
   background-color: #EDDB62;
   color: #fff;
