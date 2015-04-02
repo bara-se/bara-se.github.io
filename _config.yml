@@ -41,3 +41,8 @@ prose:
           element: "text"
           label: "Permalink"
           value: ""
+      - name: "lang"
+        field:
+          element: "text"
+          label: "Language (2 letter code)"
+          value: "sv"

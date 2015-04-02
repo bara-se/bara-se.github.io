@@ -10,10 +10,18 @@ title: "Bärakassen.se"
   <link rel="shortcut icon" href="{{site.baseurl}}/img/favicon.ico" type="image/x-icon" />
   <link href="/css/site.css" rel="stylesheet" />
 </head>
-<body>
+<body lang="{% if page.lang %}{{ page.lang }}{% else %}sv{% endif %}">
   <header>
-    <h1>Bära</h1>
-    <p>Vi tror inte att det är någons dröm att tigga. Det bör inte heller vara någons framtid. En Bära-kasse kan vara början på en resa för den som kämpar för ett bättre liv. Vill du hjälpa till att bära en framtid?</p>
+    {% if page.lang == "en" %}
+      <h1>Bära EN</h1>
+      <p>Vi tror inte att det är någons dröm att tigga. Det bör inte heller vara någons framtid. En Bära-kasse kan vara början på en resa för den som kämpar för ett bättre liv. Vill du hjälpa till att bära en framtid?</p>
+    {% elsif page.lang == "ro" %}
+      <h1>Bära RO</h1>
+      <p>Vi tror inte att det är någons dröm att tigga. Det bör inte heller vara någons framtid. En Bära-kasse kan vara början på en resa för den som kämpar för ett bättre liv. Vill du hjälpa till att bära en framtid?</p>
+    {% else %}
+      <h1>Bära</h1>
+      <p>Vi tror inte att det är någons dröm att tigga. Det bör inte heller vara någons framtid. En Bära-kasse kan vara början på en resa för den som kämpar för ett bättre liv. Vill du hjälpa till att bära en framtid?</p>
+    {% endif %}
   </header>
   <main>
     {{ content }}
