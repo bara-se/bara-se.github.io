@@ -87,7 +87,7 @@ header {
   }
 }
 
-main {
+main, footer {
   @extend %default-width;
   padding: 2.5rem 1rem;
 }
@@ -99,6 +99,11 @@ svg {
   }
   max-width: 397px;
   margin-bottom: 1.5rem;
+}
+
+footer {
+  opacity: 0.4;
+  font-size: 0.8rem;
 }
 
 /* min-width 641px, medium screens */
