@@ -97,8 +97,9 @@ svg {
     -webkit-filter: drop-shadow(1px 1px 0 rgba(0,0,0,0.4));
             filter: drop-shadow(1px 1px 0 rgba(0,0,0,0.4));
   }
+  width: 66%;
   max-width: 397px;
-  margin: 2rem 0 1.5rem 0;
+  margin: 1.5rem auto;
 }
 
 footer {
